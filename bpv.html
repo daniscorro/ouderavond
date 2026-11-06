@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BPV | Dani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <nav class="nav" aria-label="Hoofdnavigatie">
+        <a class="logo" href="index.html">dani<span>/website</span></a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="over-mij.html">Over mij</a></li>
+            <li class="has-submenu">
+                <a class="dropdown-link active" href="bpv.html">Stage <span class="dropdown-arrow">⌄</span></a>
+                <ul class="submenu">
+                    <li><a class="active" href="bpv.html">Mijn BPV</a></li>
+                    <li><a href="bpv.html#wat-ga-je-doen">Wat ga je doen tijdens je stage?</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a class="dropdown-link" href="bsa.html">Opleiding <span class="dropdown-arrow">⌄</span></a>
+                <ul class="submenu">
+                    <li><a href="bsa.html">BSA</a></li>
+                    <li><a href="examenplan.html">Examenplan</a></li>
+                </ul>
+            </li>
+            <li><a href="bpv.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="wrap content">
+    <p class="eyebrow">Mijn onderzoek</p>
+    <h1>Mijn <span>BPV.</span></h1>
+    <p>BPV betekent beroepspraktijkvorming. Tijdens BPV werk en leer je bij een leerbedrijf. Op deze pagina beantwoord ik mijn onderzoeksvragen over stage.</p>
+    <section class="info-box">
+        <h2>Wanneer is mijn BPV?</h2>
+        <p>Mijn BPV is in het <strong>derde leerjaar</strong> en duurt <strong>één volledig jaar</strong>. Dit is de planning die ik van mijn opleiding heb gekregen. De exacte begin- en einddatum controleer ik bij school.</p>
+        <p class="small-note">Bron: informatie over mijn BPV vanuit school.</p>
+    </section>
+    <section class="info-box">
+        <h2>Waar vind ik een leerbedrijf?</h2>
+        <p>Ik kan zoeken naar erkende leerbedrijven via <a href="https://stagemarkt.nl/" target="_blank" rel="noopener">Stagemarkt</a>. Daar kan ik bedrijven vinden die studenten begeleiden tijdens hun opleiding.</p>
+        <p class="small-note">Bron: <a href="https://stagemarkt.nl/" target="_blank" rel="noopener">Stagemarkt</a>.</p>
+    </section>
+    <section class="info-box" id="wat-ga-je-doen">
+        <h2>Wat ga je doen tijdens je stage?</h2>
+        <p>Tijdens mijn stage werk ik mee bij een bedrijf. Ik leer hoe een Software Developer in het echt werkt. De precieze taken hangen af van het bedrijf en de opdrachten die ik krijg.</p>
+        <ul>
+            <li>Bespreken wat de opdracht is en mijn werk plannen.</li>
+            <li>Een ontwerp maken voor een website of programma.</li>
+            <li>Onderdelen van een website of programma bouwen.</li>
+            <li>Testen of mijn werk goed werkt.</li>
+            <li>Fouten verbeteren en ideeën geven om software beter te maken.</li>
+            <li>Samenwerken met collega's en mijn werk laten zien.</li>
+        </ul>
+        <p>Ik heb deze informatie in mijn eigen woorden samengevat uit het kwalificatiedossier voor Software Developer van SBB.</p>
+        <p class="small-note">Bron: <a href="https://kwalificatie-mijn.s-bb.nl/kwalificatie/software-developer/cmVzdWx0YWF0VHlwZT01O2Rvc3NpZXJJZD0yZjQzNTU0Yi1lNzE2LTQzZDgtOWZmMi1mMzBjMzgyNGE1MjU7a3dhbGlmaWNhdGllSWQ9MmY0MzU1NGItZTcxNi00M2Q4LTlmZjItZjMwYzM4MjRhNTI1" target="_blank" rel="noopener">SBB Kwalificatieregister: Software Developer</a>.</p>
+    </section>
+    <section class="info-box contact-area" id="contact">
+        <form class="contact-form" action="#contact" method="post">
+            <h2>Contactformulier</h2>
+            <p class="form-note">Vul het formulier in. Dit formulier is voor de opdracht en verstuurt geen echte gegevens.</p>
+            <fieldset class="form-grid">
+                <legend>Je gegevens</legend>
+                <label class="form-field" for="naam"><span>Naam</span><input type="text" id="naam" name="naam" required></label>
+                <label class="form-field" for="email"><span>E-mailadres</span><input type="email" id="email" name="email" required></label>
+                <label class="form-field" for="telefoon"><span>Telefoonnummer</span><input type="tel" id="telefoon" name="telefoon"></label>
+                <label class="form-field" for="datum"><span>Datum</span><input type="date" id="datum" name="datum"></label>
+                <label class="form-field" for="onderwerp"><span>Onderwerp</span>
+                    <select id="onderwerp" name="onderwerp">
+                        <option value="">Kies een onderwerp</option>
+                        <option value="opleiding">Opleiding</option>
+                        <option value="bpv">BPV</option>
+                        <option value="website">Website</option>
+                        <option value="anders">Anders</option>
+                    </select>
+                </label>
+                <fieldset class="choice-area">
+                    <legend>Hoe wilt u contact?</legend>
+                    <label><input type="radio" name="contact" value="email" checked> E-mail</label>
+                    <label><input type="radio" name="contact" value="telefoon"> Telefoon</label>
+                </fieldset>
+            </fieldset>
+            <label class="full-field" for="vraag"><span>Je vraag of bericht</span><textarea id="vraag" name="vraag" rows="5" required></textarea></label>
+            <p class="consent"><label><input type="checkbox" name="toestemming" required> Ik geef toestemming om mijn gegevens te gebruiken om mijn vraag te beantwoorden.</label></p>
+            <button class="send-button" type="submit">Verzenden</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>Website Dani - 2026</p>
+    <p>Gemaakt met HTML &amp; CSS</p>
+</footer>
+</body>
+</html>
